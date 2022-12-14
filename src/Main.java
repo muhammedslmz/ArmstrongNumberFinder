@@ -4,27 +4,13 @@ public class Main
 {
     public static void main(String[] args)
     {
-        int num;
-        int stepValue,numOfStep=0;
-        int result=0;
-       Scanner inp =new Scanner(System.in);
-       num= inp.nextInt();
-       int tempnum=num;
-       while(tempnum !=0)
-       {
-           tempnum/=10;
-           numOfStep++;
-       }
-
-        tempnum=num;
-
-        for(int i =1; i<=numOfStep;i++)
+        Scanner inp =new Scanner(System.in);
+        double n= inp.nextDouble();
+        double total=0;
+        for (int i=1; i<=n;i++)
         {
-            stepValue=tempnum%10;
-            result+=stepValue;
-            tempnum/=10;
+            total+=i/n;
         }
-
-        System.out.println("Sum of digits of the number: "+result);
+        System.out.println(total);
     }
 }
