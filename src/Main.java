@@ -7,6 +7,7 @@ public class Main
         Scanner inp=new Scanner(System.in);
         System.out.print("Enter the n: ");
         int n= inp.nextInt();
+
         for (int i =0;i<=n;i++)
         {
 
